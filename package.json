@@ -1,12 +1,14 @@
 {
-  "name": "hotrestaurant",
+  "name": "friendfinder",
   "version": "1.0.0",
-  "description": "* Description: Basic app demonstrating Node and Express with jQuery. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list. * Live Demo: <https://hot-restaurant.herokuapp.com/>",
+  "description": "",
   "main": "servers.js",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "init": "^0.1.2",
-    "path": "^0.12.7"
+    "nodemon": "^1.12.1",
+    "path": "^0.12.7",
+    "require": "^2.4.20"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GirlzGirlzGirlz/HotRestaurant.git"
+    "url": "git+https://github.com/jessicatoro2/FriendFinder.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GirlzGirlzGirlz/HotRestaurant/issues"
+    "url": "https://github.com/jessicatoro2/FriendFinder/issues"
   },
-  "homepage": "https://github.com/GirlzGirlzGirlz/HotRestaurant#readme"
+  "homepage": "https://github.com/jessicatoro2/FriendFinder#readme"
 }

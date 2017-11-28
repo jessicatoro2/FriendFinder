@@ -5,85 +5,322 @@
   <title>Friend Finder</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 
 </head>
 <body>
-
+<!-- Header -->
   <div class="container">
     <div class="jumbotron">
       <h1><center><span></span> Friend Finder
-      <hr>
-      <h3><center>Answer a few basic questions. <br>Then find the friend with the greatest compatibility!
-       gone!</h3></center>
-      </h3><center><a href="/tables"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span>Go to survey</button></a>
+      <h3><center>Answer a few basic questions. <br>Then find the friend with the greatest compatibility!</h3></center>
     </div>
   </div>
-    </div>
+  
+  <div class="container">
     <div class="row">
-
       <div class="col-lg-12">
-
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title"><strong>Make a Reservation</strong></h3>
+            <h3 class="panel-title"><strong>Survey Questions</strong></h3>
           </div>
-          <div class="panel-body">
-            <form role="form">
 
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name">
-              </div>
+          <div class="container">
+            <h2>About You</h2>
+            <p><strong>Name (Required)</strong></p>
+            <input type="text" name="name" id="name" class="form-control" style="width: 90%"><br>
 
-              <div class="form-group">
-                <label for="phoneNumber">Phone Number</label>
-                <input type="text" class="form-control" id="phoneNumber">
-              </div>
+            <p><strong>Link to photo (Required)</strong></p>
+            <input type="text" name="photo" id="photo" class="form-control" style="width: 90%">
+          </div>
+            
 
-              <div class="form-group">
-                <label for="email">Age</label>
-                <input type="text" class="form-control" id="email">
-              </div>
 
-              <div class="form-group">
-                <label for="customerID">Customer ID</label>
-                <input type="text" class="form-control" id="customerID">
-              </div>
 
-            </form>
-            <br>
-            <div class="text-right">
-              <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-fire"></span> Book a Table!</button>
+
+<!-- Question #1 -->
+        <div class="container">
+          <h3>Question 1</h3>
+       
+            <div class="form-group">
+              
+              <label for="question1">I am usually the storyteller in a group.</label>
+              <select class="form-control" id="question1" name="scores[0]" style="width: 155px">
+               <form> 
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+                </form>
+              </select>
             </div>
-          </div>
         </div>
 
+<!-- Question #2 -->
+        <div class="container">
+          <h3>Question 2</h3>
+  
+          
+            <div class="form-group">
+              
+              <label for="question2">Outdoors adventures appeal to me.</label>
+              <select class="form-control" id="question2" name="scores[1]" style="width: 155px">
+               <form> 
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+                </form>
+              </select>
+            </div>
+        </div>
+
+<!-- Question #3 -->
+        <div class="container">
+          <h3>Question 3</h3>
+          
+            <div class="form-group">
+              
+              <label for="question3">Traveling is important to me.</label>
+              <select class="form-control" id="question3" name="scores[2]" style="width: 155px">
+               <form> 
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+                </form>
+              </select>
+            </div>
+        </div>
+
+<!-- Question #4 -->
+        <div class="container">
+          <h3>Question 4</h3>
+          
+          
+            <div class="form-group">
+              
+              <label for="question4">I'm looking for a serious relationship.</label>
+              <select class="form-control" id="question4" name="scores[3]" style="width: 155px">
+               <form> 
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+                </form>
+              </select>
+            </div>
+        </div>
+
+<!-- Question #5 -->
+        <div class="container">
+          <h3>Question 5</h3>
+          
+          
+            <div class="form-group">
+              
+              <label for="question5">Faith and/or religion is important to me.</label>
+              <select class="form-control" id="question5" name="scores[4]" style="width: 155px">
+               <form> 
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+                </form>
+              </select>
+            </div>
+        </div>
+
+<!-- Question #6 -->
+        <div class="container">
+          <h3>Question 6</h3>
+          
+          
+            <div class="form-group">
+              
+              <label for="question6">I am a social butterfly and love spending time out and about.</label>
+              <select class="form-control" id="question6" name="scores[5]" style="width: 155px">
+               <form> 
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+                </form>
+              </select>
+            </div>
+        </div>
+
+  <!-- Question #7 -->
+        <div class="container">
+          <h3>Question 7</h3>
+          
+          
+            <div class="form-group">
+              
+              <label for="question7">Music is a the best part of life.</label>
+              <select class="form-control" id="question7" name="scores[6]" style="width: 155px">
+               <form> 
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+                </form>
+              </select>
+            </div>
+        </div>
+
+<!-- Question #8 -->
+        <div class="container">
+          <h3>Question 8</h3>
+          
+          
+            <div class="form-group">
+              
+              <label for="question8">Dogs > Cats.</label>
+              <select class="form-control" id="question8" name="scores[7]" style="width: 155px">
+               <form> 
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+                </form>
+              </select>
+            </div>
+        </div>
+
+<!-- Question #9-->
+        <div class="container">
+          <h3>Question 9</h3>
+          
+            <div class="form-group">
+              
+              <label for="question9">I want a family some day.</label>
+              <select class="form-control" id="question9" name="scores[8]" style="width: 155px">
+               <form> 
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+                </form>
+              </select>
+            </div>
+        </div>
+
+<!-- Question #10-->
+        <div class="container">
+          <h3>Question 10</h3>
+          
+          
+            <div class="form-group">
+              
+              <label for="question10">I'm a creative person</label>
+              <select class="form-control" id="question10" name="scores[9]" style="width: 155px">
+               <form> 
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+                </form>
+              </select>
+            </div>
+        </div>
+
+   <!--  <input type="submit" class="btn btn-primary" value="Find Your Buddy" id="submit" style="width: 100%"> -->
+ 
+ <!-- Modal: Modal is a Bootstraps component that uses lightbox to display the results of the data search -->      
+ <!-- ========================================================================================================================= -->
+<!-- Button trigger modal -->
+<button type="button" id="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Find Your Buddy
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Best match</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- Data for match goes here -->
+      <div class="modal-body">
+        <h2 id="buddyName"></h2>
+        <img id="buddyImg">
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- Javascript for the button to work -->
   <script type="text/javascript">
-    // Question: What does this code do?
-    $("#add-btn").on("click", function(event) {
+
+
+    $("#submit").on("click", function(event) {
       event.preventDefault();
 
-      var newReservation = {
+      var userInput = {
         name: $("#name").val().trim(),
-        phoneNumber: $("#phoneNumber").val().trim(),
-        email: $("#email").val().trim(),
-        customerID: $("#customerID").val().trim()
-      };
+        photo: $("#photo").val().trim(),
+        scores: [$('#question1').val().trim(),
+                $('#question2').val().trim(),
+                $('#question3').val().trim(),
+                $('#question4').val().trim(),
+                $('#question5').val().trim(),
+                $('#question6').val().trim(),
+                $('#question7').val().trim(),
+                $('#question8').val().trim(),
+                $('#question9').val().trim(),
+                $('#question10').val().trim()]
+      }; 
 
-      // Question: What does this code do??
-      $.post("/form", newReservation)
-      .done(function(data) {
-        console.log(data);
-        alert("Adding ...");
+      var currentURL = window.location.origin;
+      console.log(currentURL);
+
+      $.post(currentURL + '/api/friends', userInput, function(response){
+        console.log(response)
+        $(".buddyModal").modal("show");
+        $("#buddyName").text(data.name);
+        $("#buddyImg").attr("src", data.photo);
+      }).done(function(data){
+          console.log(data)
       });
-
+      return false;
     });
+    
   </script>
+
+
 </body>
 </html>
